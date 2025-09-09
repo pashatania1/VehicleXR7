@@ -8,4 +8,10 @@ public class Vehicle {
         make = "BMW";
         milesPerGallon = 50;
     }
+
+    public void display() {
+        System.out.println("Make: " + make);
+        System.out.println("Miles per Gallon: " + milesPerGallon);
+    }
+
 }
