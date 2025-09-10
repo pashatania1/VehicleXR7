@@ -3,10 +3,34 @@ public class Vehicle {
     private String make;
     private int milesPerGallon;
 
-    //Constructor
+    //Default Constructor
     public Vehicle() {
         make = "BMW";
         milesPerGallon = 50;
+    }
+
+    //Constructor Parameter
+    public Vehicle(String m, int mpg) {
+        make = m;
+        milesPerGallon = mpg;
+    }
+
+    //Getter
+    public String getMake() {
+        return make;
+    }
+
+    public int getMilesPerGallon() {
+        return milesPerGallon;
+    }
+
+    //Setter
+    public void setMake(String m) {
+        make = m;
+    }
+
+    public void setMilesPerGallon(int mpg) {
+        milesPerGallon = mpg;
     }
 
     public void display() {
